@@ -1,8 +1,10 @@
 const ask = () => {
-    alert('Holaaaa!');
     //Leer Pregunta
     //Recibir respuesta al preguntar a bola mágina
+    let answer = magicBall();
     //Imprimir Resultado
+    const answerInput = document.getElementById('answer');
+    answerInput.value = answer;
 };
 
 //Función Bola Mágica
@@ -23,7 +25,7 @@ const magicBall = () => {
         eightBall = 'Cannot predict now';
         break;
     case 4:
-        eighBall = 'Do not count on it';
+        eightBall = 'Do not count on it';
         break;
     case 5:
         eightBall = 'My sources say no';
@@ -35,4 +37,5 @@ const magicBall = () => {
         eightBall = 'Signs point to yes';
         break;
     }
+    return eightBall
 };
